@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" theme="g100">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .bx--tabs__nav-item {
+        background: rgb(134, 152, 242);
+        background: linear-gradient(
+          180deg,
+          rgba(134, 152, 242, 1) 0%,
+          rgba(0, 0, 0, 1) 82%
+        ) !important;
+      }
+      .bx--tabs__nav-item--selected {
+        background: rgb(36, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba(36, 0, 0, 1) 0%,
+          rgba(128, 16, 128, 1) 75%,
+          rgba(109, 0, 255, 1) 100%
+        ) !important;
+      }
+      .bx--tabs__nav-item:hover,
+      .bx--tabs__nav-item--selected:hover {
+        font-size: 1.2rem !important;
+      }
+
+      [role='tabpanel'] .bx--tile {
+        width: 650px;
+        border: solid 1px;
+      }
+
+      [role='tabpanel'] {
+        padding: 0 !important;
+      }
+
+      .bx--tabs__nav {
+        width: 100% !important;
+      }
+
+      .a.bx--tabs__nav-link,
+      a.bx--tabs__nav-link {
+        outline: none !important;
+      }
+
+      .bx--content {
+        padding: 0 !important;
+      }
+      .bx--grid {
+        padding: 0 5px !important;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>IPL Bidding</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/carbon-components-svelte@0.14.0/css/all.css"
+    />
+    <link rel="stylesheet" href="/build/bundle.css" />
+    <script defer src="/build/bundle.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>
