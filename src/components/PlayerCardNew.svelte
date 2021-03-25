@@ -21,7 +21,7 @@
     <div class="image-container">
       <img class="fit-image" src={player.url} alt={player.name} />
     </div>
-    <div class="stats-container">
+    <!-- <div class="stats-container">
       <div class="player-detail-container">
         <span class="label margin-left-1ch">Name</span>
         <span class="text bold">{player.name}</span>
@@ -51,7 +51,8 @@
       <div class="links-container">
         <button class="circular-btn center">See Stats</button>
       </div>
-    </div>
+    </div> -->
+    <div class="stats-container" />
   </div>
 </div>
 

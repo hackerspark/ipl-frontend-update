@@ -11,8 +11,8 @@
   } from 'carbon-components-svelte';
   import { replace } from 'svelte-spa-router';
 
-  import TableLayout from '../components/TableLayout.svelte';
-  import PlayerCardNew from '../components/PlayerCardNew.svelte';
+  import TabbedTable from '../components/TabbedTable.svelte';
+  import PlayerCard2 from '../components/PlayerCard2.svelte';
   import TiltRow from '../components/TiltRow.svelte';
   import BidTable from '../components/BidTable.svelte';
   import { bidStore } from '../stores/bid';
@@ -32,58 +32,37 @@
 <div style="padding: 60px 10px">
   <Row padding>
     <Column lg={5}>
-      <PlayerCardNew />
-    </Column>
-
-    <Column lg={5}>
-      <BidTable />
+      <div style="margin: 30px;">
+        <TabbedTable />
+      </div>
+      <div style="width: 250px; margin: 30px;">
+        <TiltRow direction="both">
+          <h6>Bowler : 7/20</h6>
+        </TiltRow>
+        <TiltRow direction="both">
+          <h6>Bowler : 7/20</h6>
+        </TiltRow>
+        <TiltRow direction="both">
+          <h6>Bowler : 7/20</h6>
+        </TiltRow>
+        <TiltRow direction="both">
+          <h6>Bowler : 7/20</h6>
+        </TiltRow>
+      </div>
     </Column>
 
     <Column lg={6}>
-      <Row>
-        <TableLayout />
-      </Row>
-
-      <Row padded>
-        <div style="height: 2ch">test</div>
-      </Row>
-
-      <Row>
-        <Column sm={{ offset: 2 }}>
-          <div style="margin: 5px 0 5px -20px;width: 200px;">
-            <TiltRow direction="left">
-              <h6>Batsman : 7/20</h6>
-            </TiltRow>
-          </div>
-        </Column>
-      </Row>
-      <Row>
-        <Column sm={{ offset: 2 }}>
-          <div style="margin: 5px 0 5px -20px;width: 200px;">
-            <TiltRow direction="left">
-              <h6>Batsman : 7/20</h6>
-            </TiltRow>
-          </div>
-        </Column>
-      </Row>
-      <Row>
-        <Column sm={{ offset: 2 }}>
-          <div style="margin: 5px 0 5px -20px;width: 200px;">
-            <TiltRow direction="left">
-              <h6>Batsman : 7/20</h6>
-            </TiltRow>
-          </div>
-        </Column>
-      </Row>
-      <Row>
-        <Column sm={{ offset: 2 }}>
-          <div style="margin: 5px 0 5px -20px;width: 200px;">
-            <TiltRow direction="left">
-              <h6>Batsman : 7/20</h6>
-            </TiltRow>
-          </div>
-        </Column>
-      </Row>
+      <div>
+        <PlayerCard2 />
+      </div>
+    </Column>
+    <Column lg={5}>
+      <div>
+        <BidTable />
+      </div>
+      <div>
+        <Button>Bid End!</Button>
+      </div>
     </Column>
   </Row>
 </div>

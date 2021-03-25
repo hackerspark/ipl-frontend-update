@@ -68,20 +68,24 @@
     <button class="tab">Wicket Keeper</button>
   </div>
   <table class="table">
-    <th>Name</th>
-    <th>Base Price</th>
-    <th>Critics Rating</th>
-    <th />
-    {#each players as player}
-      <tr>
-        <td>{player.name}</td>
-        <td>{player.basePrice}</td>
-        <td>{player.criticsRating}</td>
-        <td>
-          <PushButton text="Bid!" />
-        </td>
-      </tr>
-    {/each}
+    <thead>
+      <th>Name</th>
+      <th>Base Price</th>
+      <th>Critics Rating</th>
+      <th />
+    </thead>
+    <tbody class="fixed">
+      {#each players as player}
+        <tr>
+          <td>{player.name}</td>
+          <td>{player.basePrice}</td>
+          <td>{player.criticsRating}</td>
+          <td>
+            <PushButton text="Bid!" />
+          </td>
+        </tr>
+      {/each}
+    </tbody>
   </table>
 </div>
 
@@ -94,6 +98,10 @@
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(to bottom, #960101, #e3d51c) 1;
+  }
+  .fixed {
+    height: 150px;
+    overflow-y: auto;
   }
   .tabs {
     display: grid;

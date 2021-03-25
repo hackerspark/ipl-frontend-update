@@ -110,17 +110,18 @@
 
 <style>
   .background {
-    background-image: url(https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-image: url(https://i2.wp.com/background4free.com/download/blue_black_electric_blue_633655579.jpg?q=100);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
     width: 100%;
   }
 
   .blur {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(2px);
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(2px); */
     height: 100vh;
     width: 100%;
   }

@@ -40,7 +40,7 @@
     border-spacing: 0;
     background: rgba(25, 106, 115, 0.7);
     backdrop-filter: blur(2px);
-    border: solid 1px;
+    /* border: solid 1px; */
     border-radius: 5px;
   }
   th,
