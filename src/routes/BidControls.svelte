@@ -15,6 +15,7 @@
   import PlayerCard2 from '../components/PlayerCard2.svelte';
   import TiltRow from '../components/TiltRow.svelte';
   import BidTable from '../components/BidTable.svelte';
+  import PushButton from '../components/PushButton.svelte';
   import { bidStore } from '../stores/bid';
 
   function endBid() {
@@ -36,32 +37,73 @@
         <TabbedTable />
       </div>
       <div style="width: 250px; margin: 30px;">
-        <TiltRow direction="both">
+        <TiltRow
+          direction="right"
+          mainBackground="linear-gradient(90deg, rgba(194,26,246,1) 0%, rgba(77,47,107,1) 3%, rgba(40,23,57,1) 15%)
+        "
+          beforeTiltBackground="rgba(194,26,246,1)"
+          afterTiltBackground="rgba(40,23,57,1)"
+          margin="10px"
+        >
           <h6>Bowler : 7/20</h6>
         </TiltRow>
-        <TiltRow direction="both">
+        <TiltRow
+          direction="right"
+          mainBackground="linear-gradient(90deg, rgba(194,26,246,1) 0%, rgba(77,47,107,1) 3%, rgba(40,23,57,1) 15%)
+        "
+          beforeTiltBackground="rgba(194,26,246,1)"
+          afterTiltBackground="rgba(40,23,57,1)"
+          margin="10px"
+        >
           <h6>Bowler : 7/20</h6>
         </TiltRow>
-        <TiltRow direction="both">
+        <TiltRow
+          direction="right"
+          mainBackground="linear-gradient(90deg, rgba(194,26,246,1) 0%, rgba(77,47,107,1) 3%, rgba(40,23,57,1) 15%)
+        "
+          beforeTiltBackground="rgba(194,26,246,1)"
+          afterTiltBackground="rgba(40,23,57,1)"
+          margin="10px"
+        >
           <h6>Bowler : 7/20</h6>
         </TiltRow>
-        <TiltRow direction="both">
+        <TiltRow
+          direction="right"
+          mainBackground="linear-gradient(90deg, rgba(194,26,246,1) 0%, rgba(77,47,107,1) 3%, rgba(40,23,57,1) 15%)
+        "
+          beforeTiltBackground="rgba(194,26,246,1)"
+          afterTiltBackground="rgba(40,23,57,1)"
+          margin="10px"
+        >
           <h6>Bowler : 7/20</h6>
         </TiltRow>
       </div>
     </Column>
 
-    <Column lg={6}>
+    <Column lg={5}>
       <div>
         <PlayerCard2 />
       </div>
     </Column>
-    <Column lg={5}>
+    <Column lg={3}>
       <div>
         <BidTable />
       </div>
-      <div>
-        <Button>Bid End!</Button>
+    </Column>
+    <Column lg={3}>
+      <div style="float:left; margin: 8px;">
+        <PushButton
+          text="Sold!"
+          background="rgb(13 128 11)"
+          pushShadow="rgb(73 5 5)"
+        />
+      </div>
+      <div style="float:left; margin: 8px;">
+        <PushButton
+          text="Unsold!"
+          background="rgb(135, 0, 0)"
+          pushShadow="rgb(120,80,0)"
+        />
       </div>
     </Column>
   </Row>

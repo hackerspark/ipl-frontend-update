@@ -1,8 +1,17 @@
 <script>
-  export let direction = '';
+  export let direction = 'none';
+  export let mainBackground = 'rgb(58 95 26)';
+  export let beforeTiltBackground = 'rgb(58 95 26)';
+  export let afterTiltBackground = 'rgb(58 95 26)';
+  export let margin = '3px';
 </script>
 
-<div class={direction ? direction + '-tilt' : ''}>
+<div
+  class={direction ? direction + '-tilt' : ''}
+  style="--main-background:{mainBackground};
+  --before-tilt-background:{beforeTiltBackground};
+  --after-tilt-background:{afterTiltBackground};--margin: {margin}"
+>
   <slot />
 </div>
 
@@ -13,8 +22,8 @@
     position: relative;
     color: white;
     padding: 5px;
-    background: rgb(58 95 26);
-    margin: 3px;
+    background: var(--main-background);
+    margin: var(--margin);
   }
   .left-tilt:before,
   .both-tilt:before {
@@ -25,7 +34,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgb(58 95 26);
+    background: var(--before-tilt-background);
     transform: skewX(-15deg);
   }
   .right-tilt:after,
@@ -37,7 +46,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgb(58 95 26);
+    background: var(--after-tilt-background);
     transform: skewX(-345deg);
   }
 </style>

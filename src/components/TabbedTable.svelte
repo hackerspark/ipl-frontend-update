@@ -98,7 +98,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     overflow-y: hidden;
-    box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 5px 2px rgba(112, 2, 2, 0.7);
   }
   .parent {
     height: 360px;
@@ -107,7 +107,7 @@
     display: grid;
     grid-template-columns: 100%;
     overflow-y: auto;
-    background: rgba(221, 221, 221, 0.5);
+    background: rgba(112, 2, 2, 0.4);
   }
   .row {
     display: grid;
@@ -116,6 +116,14 @@
     padding: 20px;
   }
   .row:hover {
-    background: rgba(221, 221, 221, 1);
+    background: rgba(99, 29, 29, 0.7);
+  }
+  .row img {
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .row img:active {
+    background: white;
   }
 </style>
