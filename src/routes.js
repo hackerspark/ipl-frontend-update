@@ -31,10 +31,11 @@ export default {
     conditions: [() => validateUserType('ADMIN'), () => !isBidRunning()],
   }),
 
-  '/teams': wrap({
-    component: Teams,
-    conditions: [() => validateUserType('ADMIN'), () => !isBidRunning()],
-  }),
+  // '/teams': wrap({
+  //   component: Teams,
+  //   conditions: [() => validateUserType('ADMIN'), () => !isBidRunning()],
+  // }),
+  '/teams': Teams,
 
   '/overview': wrap({
     component: Overview,

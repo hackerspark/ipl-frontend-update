@@ -11,8 +11,23 @@
       bid: 300,
     },
     {
-      id: 'c',
-      name: 'Team C',
+      id: 'd',
+      name: 'Team D',
+      bid: 400,
+    },
+    {
+      id: 'e',
+      name: 'Team E',
+      bid: 400,
+    },
+    {
+      id: 'f',
+      name: 'Team F',
+      bid: 400,
+    },
+    {
+      id: 'g',
+      name: 'Team G',
       bid: 400,
     },
   ];
@@ -24,7 +39,7 @@
     <span>LIVE</span>
   </div>
   <table class="table">
-    <th>Name</th>
+    <th>Teams</th>
     <th>Bid Value</th>
     {#each bids as bid}
       <tr>
@@ -36,20 +51,34 @@
 </div>
 
 <style>
+  @font-face {
+    font-family: MAKISUPA;
+    src: url('/MAKISUPA.TTF');
+  } 
   .table {
     border-spacing: 0;
-    background: rgba(25, 106, 115, 0.7);
-    backdrop-filter: blur(2px);
+    /* background: rgba(25, 106, 115, 0.7); */
+    /* backdrop-filter: blur(2px); */
     /* border: solid 1px; */
     border-radius: 5px;
+    box-shadow: 2px 5px 10px #917a01;
+    border: solid #a98e00;
+    border-width: 1px;
+    font-family: 'MAKISUPA', sans-serif;
+    width: 230px;
   }
   th,
   td {
     padding: 10px 20px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+  tr {
+    text-align: center;
   }
   th {
-    background-color: black;
+    /* background-color: black; */
+    border-bottom: solid 1px rgb(255 215 0 / 30%);
+    color: rgb(219 186 8);
   }
   .outer {
     border-radius: 8px;
@@ -70,5 +99,9 @@
     to {
       visibility: hidden;
     }
+  }
+
+  .container {
+    width: 300px;
   }
 </style>

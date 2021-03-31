@@ -1,5 +1,5 @@
 <script>
-  import TiltRow from './TiltRow.svelte';
+  // import div from './div.svelte';
   let player = {
     url:
       'https://raw.githubusercontent.com/hackerspark/images/main/imageedit_3_5902486535.png',
@@ -19,27 +19,53 @@
     <img class="fit-image" src={player.url} alt={player.name} />
   </div>
   <div class="name-container">
-    <h3>{player.name}</h3>
+    <h3 style="font-family:SPORTVIPER;text-shadow:0 0 10px red">
+      {player.name}
+    </h3>
   </div>
   <div class="stats-container">
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
-    <TiltRow direction="both"
-      ><div style="width:300px">Hello World</div></TiltRow
-    >
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">Matches</div>
+        <div style="float:right;padding: 0 0 0 50px">11</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">Runs</div>
+        <div style="float:right;padding: 0 0 0 50px">325</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">50s</div>
+        <div style="float:right;padding: 0 0 0 50px">2</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">100s</div>
+        <div style="float:right;padding: 0 0 0 50px">1</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">Average</div>
+        <div style="float:right;padding: 0 0 0 50px">52.14</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">Strike Rate</div>
+        <div style="float:right;padding: 0 0 0 50px">144.8</div>
+      </div>
+    </div>
+    <div style="margin: 5px 0; box-shadow: 0 0 5px white;padding: 10px">
+      <div style="width:300px;font-family: MAKISUPA">
+        <div style="float:left;padding: 0 50px 0 0">Highest Score</div>
+        <div style="float:right;padding: 0 0 0 50px">200</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -69,5 +95,14 @@
     display: grid;
     grid-template-rows: repeat(6, auto);
     justify-items: center;
+  }
+  @font-face {
+    font-family: MAKISUPA;
+    src: url('/MAKISUPA.TTF');
+  }
+
+  @font-face {
+    font-family: SPORTVIPER;
+    src: url('/SPORTVIPER.TTF');
   }
 </style>
