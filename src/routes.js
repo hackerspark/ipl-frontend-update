@@ -23,12 +23,12 @@ export default {
 
   '/room': wrap({
     component: Room,
-    conditions: [() => validateUserType('USER'), () => !isBidRunning()],
+    // conditions: [() => validateUserType('USER'), () => !isBidRunning()],
   }),
 
   '/controlPanel': wrap({
     component: ControlPanel,
-    conditions: [() => validateUserType('ADMIN'), () => !isBidRunning()],
+    // conditions: [() => validateUserType('ADMIN'), () => !isBidRunning()],
   }),
 
   // '/teams': wrap({
@@ -39,7 +39,7 @@ export default {
 
   '/overview': wrap({
     component: Overview,
-    conditions: [() => validateUserType('USER')],
+    // conditions: [() => validateUserType('USER')],
   }),
 
   // '/bidControls': wrap({

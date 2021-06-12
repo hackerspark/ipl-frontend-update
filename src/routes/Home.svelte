@@ -12,7 +12,7 @@
 
   import { createForm } from 'svelte-forms-lib';
   import * as yup from 'yup';
-  import { push, replace } from 'svelte-spa-router';
+  import { replace } from 'svelte-spa-router';
   import { userStore } from '../stores/user';
 
   let submitting = false;
@@ -39,7 +39,7 @@
 
       let { type } = await response.json();
 
-      userStore.update((user) => ({
+      userStore.update(() => ({
         username: values.username,
         password: values.password,
         type,

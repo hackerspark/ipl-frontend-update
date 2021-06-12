@@ -4,13 +4,8 @@
     SideNav,
     SideNavItems,
     SideNavLink,
-    Content,
-    Grid,
-    Row,
-    Column,
     HeaderNav,
     HeaderNavItem,
-    HeaderNavMenu,
     HeaderUtilities,
     HeaderAction,
     HeaderPanelLinks,
@@ -33,7 +28,7 @@
   let isOpen = false;
   let isLoggedIn = false;
 
-  function conditionsFailed(event) {
+  function conditionsFailed() {
     if ($bidStore) {
       replace('/bidControls');
     } else {
